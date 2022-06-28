@@ -1,0 +1,120 @@
+body {
+    font-family: 'Shot Devanagari Sanskrit', serif;
+    background: #FEFEFE;
+}
+
+/*Pagina Inicial*/
+header {
+    background-image: url(header-back.jpg);
+    padding: 1em 0;
+    /*border-bottom: 3px solid #000000;*/
+    box-shadow: inset 0 0 2em #000000;
+
+}
+.lista-topo{
+
+    font-family: 'Regina';
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.img-header {
+    width: 40%;
+    position: relative;
+    left: -100px;
+    top: -40px;
+}
+
+nav {
+
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 400px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: 5px 5px 5pxa;
+}
+
+nav a:hover {
+    color: #FEFEFE;
+    text-decoration: underline;
+}
+/*main{
+background-image: url(main-back.png);
+background-repeat: no-repeat;
+background-position: center right;
+}*/
+
+@font-face {
+    font-family: 'Regina';
+    src: url('fonts/ReginaBlack-Solid.otf') format('opentype'), url('fonts/ReginaBlack-Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+    tipos de format()
+    - opentype(otf)
+    - truetype(ttf)
+    - embedded-opentype
+    - truetype att(Apple Advanced Typography)
+    - sgv
+    */
+}
+#titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 0 3px #000000;
+    margin: 10px 10px;
+    font-family: 'Regina' ;
+}
+.textos{
+    font-size: 18px;
+    width: 940px;
+    padding: 10px 10px;
+    margin: 0 18%;
+    color: #000000;
+}
+footer {
+    background-image: url(footer-back.jpg);
+    padding: 20px 0;
+}
+
+.caixa1{
+    position: relative;
+    width: 940px;
+    height: 250px;
+    margin: 0 auto;
+
+}
+
+.copyrigth {
+    display: inline-block;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 1em 18em 1em 0;
+    position: relative;
+    left: 74%;
+    top: 90%;
+}
+
+.img-footer {
+    width: 40%;
+    position: absolute;
+    left: 65%;
+    padding: 0 0 25px 0;
+}
