@@ -2,6 +2,7 @@
 import FirstComponent from './components/firstComponent';
 import TemplateExpressions from './components/TemplateExpressions';
 import Events from './components/Events';
+import Challenge from './components/Challenge';
 
 
 // CSS
@@ -12,9 +13,11 @@ function App() {
     <div className="App">
       <div className="firstDiv">
         <h1>Fundamentos</h1>
-        <FirstComponent />;
-        <TemplateExpressions />;
+        <FirstComponent />
+        <TemplateExpressions />
         <Events />
+
+        <Challenge />
       </div>
     </div>
   );
