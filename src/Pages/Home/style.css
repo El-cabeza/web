@@ -1,0 +1,21 @@
+.header {
+  background-image: url(../../img/background.jpg);
+  display: flex;
+  flex: 1;
+  height: 100px;
+  width: auto;
+  color: white;
+  font-family: Poppins, sans-serif;
+  justify-content: flex-end;
+}
+.header-text {
+  font-size: 30px;
+  word-spacing: 20px;
+  margin-right: 50px;
+}
+.avatarImg {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin: 8px 20px 0 0;
+}

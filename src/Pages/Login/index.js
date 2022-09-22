@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { MdOutlineMail } from "react-icons/md";
 import { MdOutlineLock } from "react-icons/md";
-import img1 from "../img/logo.png";
+import { useNavigate } from "react-router-dom";
+import IconToViewPassword from "../../Components/IconToViewPassword";
+import { validateEmail } from "../../Components/ValidFormatEmail";
+
+
+import './style.css';
+import img1 from "../../img/logo.png";
 
 
 
 export default function FirstComponent() {
+  const navigate = useNavigate();
+  const [visible, setVisible] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleEmail = e => { setEmail(e.target.value) };
@@ -16,15 +24,11 @@ export default function FirstComponent() {
       alert("formato de email invalido");
     } else {
       alert("Enviado");
-
     }
   };
-  const validateEmail = (email) => {
-    var re = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]/i;
-    return re.test(email);
+  const navRegister = () => {
+    navigate('/register')
   }
-
-  console.log(email)
   return (
     <div className="main">
       <div className="logo">
@@ -41,7 +45,8 @@ export default function FirstComponent() {
           <div className="positionIcon">
             <MdOutlineLock className="icon" />
           </div>
-          <input className="forms" type="password" value={password} onChange={handlePassword} placeholder="Senha" />
+          <input className="forms" type={(visible === true) ? "password" : "text"} value={password} onChange={handlePassword} placeholder="Senha" />
+          <IconToViewPassword visible={visible} visibleSet={() => { setVisible(!visible) }} />
         </div>
         <p className="forgiveText"><a href="./app.js">Esqueci minha senha</a></p>
         <div>
@@ -51,10 +56,11 @@ export default function FirstComponent() {
               : <button className="buttonEnter" onClick={login} >Entrar</button>
           }
         </div>
-        <p className="singupText">Não tem uma conta? <a href="./app.js">Cadastre-se</a> </p>
+        <div className="singupBox">
+          <p className="singupText">Não tem uma conta?</p>
+          <p className="clickText" onClick={navRegister}> Cadastre-se</p>
+        </div>
       </div>
-
-
     </div >
   )
 }
