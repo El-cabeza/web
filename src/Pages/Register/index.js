@@ -7,7 +7,7 @@ import ValidationPassword, { ConfirmPassworMsg, passwordValidation } from "../..
 import { validateEmail } from "../../Components/ValidFormatEmail";
 import IconToViewPassword from "../../Components/IconToViewPassword";
 import { useNavigate } from "react-router-dom";
-//CSS
+
 import '../Login/style.css';
 import './style.css';
 
@@ -28,10 +28,10 @@ export default function SecondComponent() {
     const valid = validateEmail(mail)
     const validPass = passwordValidation(password)
 
-    {
-      (!valid || !validPass || confirmPassword !== password)
-        ? alert("Formato de e-mail ou senha invalido")
-        : alert("Cadastrado")
+    if (!valid || !validPass || confirmPassword !== password) {
+      alert("Formato de e-mail ou senha invalido")
+    } else {
+      alert("Cadastrado")
     }
 
   };

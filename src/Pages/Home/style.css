@@ -1,21 +1,62 @@
-.header {
-  background-image: url(../../img/background.jpg);
+.bodyPage {
+  min-height: 540px;
+  background-color: fff;
+}
+.topBox {
   display: flex;
-  flex: 1;
-  height: 100px;
-  width: auto;
+  justify-content: center;
+}
+.img-text {
+  width: 230px;
+  height: 180px;
+  float: left;
+  margin-left: 40px;
+}
+.textTop {
+  margin-top: 30px;
+  padding-right: 45px;
+}
+.selectBusiness {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1400px;
+  height: 500px;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.itemBusiness {
+  width: 300px;
+  height: 400px;
+  background-color: #efefef;
+  border: 2px solid #d3d3d3;
+  list-style: none;
+  margin: auto;
+  border-radius: 10px;
+}
+.imgBusiness {
+  width: 70%;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.titleBusiness {
+  text-align: center;
+  font-size: 25px;
+  margin: 8px;
+}
+.buttonBusiness {
+  width: 230px;
+  height: 50px;
+  margin-left: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fece08;
+  font-weight: bold;
+  font-size: 18px;
+}
+.buttonBusiness:hover {
   color: white;
-  font-family: Poppins, sans-serif;
-  justify-content: flex-end;
-}
-.header-text {
-  font-size: 30px;
-  word-spacing: 20px;
-  margin-right: 50px;
-}
-.avatarImg {
-  border-radius: 50%;
-  width: 85px;
-  height: 85px;
-  margin: 8px 20px 0 0;
+  cursor: pointer;
 }

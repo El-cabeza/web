@@ -1,0 +1,27 @@
+.footer {
+  background-image: url(../img/background.jpg);
+  color: white;
+  max-height: 100px;
+  padding: 1em;
+  font-family: Poppins, sans-serif;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.socialIcons {
+  margin: 5px 35px 0 0;
+}
+.icon {
+  margin-left: 10px;
+}
+.icon:hover {
+  color: #fece08;
+  cursor: pointer;
+}
+.textCompany {
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+}

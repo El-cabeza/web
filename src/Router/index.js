@@ -5,6 +5,7 @@ import RegisterPage from "../Pages/Register/index"
 import HomePage from "../Pages/Home/index";
 import NotFound from "../Pages/NotFound/index";
 
+
 export default function RoutePage() {
   return (
     <Router>

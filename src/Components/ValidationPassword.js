@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import './ValidationPassword.css'
-import { MdCheckCircle } from 'react-icons/md'
+import { AiFillCheckCircle, AiFillCloseCircle } from 'react-icons/ai'
 
 
 export default function ValidateMsg({ password }) {
@@ -10,7 +10,6 @@ export default function ValidateMsg({ password }) {
   let lowerCase = /^(?=.*[a-z])[0-9a-zA-Z!$*&@#]{1,}$/
   let specialCharacters = /^(?=.*[!$*&@#])[0-9a-zA-Z!$*&@#]{1,}$/
   let numeric = /^(?=.*[0-9])[0-9a-zA-Z!$*&@#]{1,}$/
-  let regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!$*&@#])(?=.*[0-9])[0-9a-zA-Z!$*&@#]{8,}$/
 
   useEffect(() => { }
     , [password])
@@ -18,39 +17,42 @@ export default function ValidateMsg({ password }) {
 
   return (
     <div className="passwordRequire">
-      {
-        (regexPassword.test(password) === true)
-          ? null
-          : <p>Sua senha deve conter: </p>
-      }
+      <p style={{ fontWeight: "bold" }}>Sua senha deve conter: </p>
       <div className="checkCircle">
-        {(minCharacters.test(password) === true) &&
-          <MdCheckCircle />
+        {(minCharacters.test(password) === true)
+          ? <AiFillCheckCircle />
+          : <AiFillCloseCircle className="check-color" />
         }
-        <p className="textPass" style={{ marginLeft: (minCharacters.test(password) === true) ? 10 : 25 }}>8 ou mais carácteres</p>
+        <p className="textPass" style={{ marginLeft: 8 }}> 8 ou mais carácteres</p>
       </div>
-
-      {
-        (upperCase.test(password) === true)
-          ? null
-          : <p>No mínimo uma letra maiúscula</p>
-      }
-      {
-        (lowerCase.test(password) === true)
-          ? null
-          : <p>No mínimo uma letra minúscula</p>
-      }
-      {
-        (specialCharacters.test(password) === true)
-          ? null
-          : <p>No mínimo um caráter especial</p>
-      }
-      {
-        (numeric.test(password) === true)
-          ? null
-          : <p>No mínimo um número</p>
-      }
-
+      <div className="checkCircle">
+        {(upperCase.test(password) === true)
+          ? <AiFillCheckCircle />
+          : <AiFillCloseCircle className="check-color" />
+        }
+        <p className="textPass" style={{ marginLeft: 8 }}>No mínimo uma letra maiúscula</p>
+      </div>
+      <div className="checkCircle">
+        {(lowerCase.test(password) === true)
+          ? <AiFillCheckCircle />
+          : <AiFillCloseCircle className="check-color" />
+        }
+        <p className="textPass" style={{ marginLeft: 8 }}>No mínimo uma letra minúscula</p>
+      </div>
+      <div className="checkCircle">
+        {(specialCharacters.test(password) === true)
+          ? <AiFillCheckCircle />
+          : <AiFillCloseCircle className="check-color" />
+        }
+        <p className="textPass" style={{ marginLeft: 8 }}>No mínimo um caráter especial</p>
+      </div>
+      <div className="checkCircle">
+        {(numeric.test(password) === true)
+          ? <AiFillCheckCircle />
+          : <AiFillCloseCircle className="check-color" />
+        }
+        <p className="textPass" style={{ marginLeft: 8 }}>No mínimo um número.</p>
+      </div>
     </div>
 
   )
@@ -60,9 +62,12 @@ export default function ValidateMsg({ password }) {
 
 export function ConfirmPassworMsg() {
   return (
-    <dir className="passwordRequire">
-      <p>As senhas não conferem</p>
-    </dir>
+    <div className="passwordRequire">
+      <div className="checkCircle">
+        <AiFillCloseCircle className="check-color" />
+        <p style={{ marginLeft: 8, color: "white" }}>As senhas não conferem</p>
+      </div>
+    </div>
   )
 
 }
