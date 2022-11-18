@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  list-style: none;
+  min-height: 100vh;
+  background-image: url(../../img/background.jpg);
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+.logo {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.loginBox {
+  flex: 1;
+  text-align: center;
+  color: #ffffff;
+  border-width: 15px white;
+}
+
+.logo-img {
+  width: 50%;
+  margin: auto;
+  display: block;
+  margin-left: 280px;
+}
+.forms {
+  border: none;
+  font-family: Poppins, sans-serif;
+  color: black;
+  font-weight: bold;
+  width: 250px;
+  height: 30px;
+  margin-left: 10px;
+}
+.forms::placeholder {
+  color: #bbbbbb;
+}
+.boxBorder {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 330px;
+  height: 50px;
+  color: #bbbbbb;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 30px;
+}
+.positionIcon {
+  margin: 5px 3px 0px 15px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.forms:focus {
+  outline: none;
+  border: none;
+}
+
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.buttonEnter {
+  background-color: #fece08;
+  border-radius: 7px;
+  border: none;
+  width: 330px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+.forgiveText {
+  font-size: 12px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-left: 180px;
+  font-weight: none;
+}
+
+.singupText {
+  font-size: 15px;
+}
+.clickText {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.singupBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 330px;
+  margin-left: 90px;
+}

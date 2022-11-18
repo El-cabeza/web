@@ -1,0 +1,15 @@
+.container {
+}
+.body {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-left: 32em;
+  margin-top: 1em;
+}
+.text {
+  font-family: 'Nabla', cursive;
+  text-align: center;
+  font-size: 8em;
+  margin-top: -5px;
+}

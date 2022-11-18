@@ -1,0 +1,40 @@
+.cotainer {
+  margin: auto;
+  margin-right: 40px;
+  
+}
+.itemBusiness {
+  width: 300px;
+  height: 400px;
+  background-color: #efefef;
+  border: 2px solid #d3d3d3;
+  list-style: none;
+  border-radius: 10px;
+  
+}
+.imgBusiness {
+  object-fit: contain;
+  border-radius: 15%;
+  width: 200px;
+  height: 200px; 
+  margin: 20px 0 40px 50px;
+}
+.titleBusiness {
+  text-align: center;
+  font-size: 25px;
+  margin: 8px;
+}
+.buttonBusiness {
+  width: 230px;
+  height: 50px;
+  margin-left: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fece08;
+  font-weight: bold;
+  font-size: 18px;
+}
+.buttonBusiness:hover {
+  color: white;
+  cursor: pointer;
+}

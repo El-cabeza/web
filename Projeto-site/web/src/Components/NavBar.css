@@ -1,0 +1,31 @@
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(../img/background.jpg);
+  font-family: Poppins, sans-serif;
+  max-height: 100px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: #ffffff;
+}
+.item {
+  margin-right: 15px;
+  font-size: 30px;
+  font-weight: ;
+  cursor: pointer;
+}
+.item:hover {
+  cursor: poiter;
+  color: #fece08;
+}
+.avatarImg {
+  margin-top: 8px;
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}

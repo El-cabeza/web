@@ -1,17 +1,10 @@
-//Components
-// import FirstComponent from './Components/FirstComponent';
-import SecondComponent from './Components/SecondComponent';
-
-// Css
-// import './Components/FirstComponent.css';
-import './Components/SecondComponent.css';
+import RoutePage from "./Router/index"
 
 
 function App() {
   return (
     <div className="App">
-      {/* <FirstComponent /> */}
-      <SecondComponent />
+      <RoutePage />
     </div>
   );
 }
